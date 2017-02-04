@@ -1,0 +1,75 @@
+@import "./styles/base.less";
+
+/** CUSTOM **/
+
+.syntax--support.syntax--other.syntax--namespace.syntax--use,
+.syntax--entity.syntax--name.syntax--type.syntax--namespace,
+.syntax--entity.syntax--name.syntax--type.syntax--class,
+.syntax--entity.syntax--other.syntax--inherited-class,
+.syntax--variable.syntax--other.syntax--property,
+.syntax--meta.syntax--function-call.syntax--object,
+.syntax--support.syntax--class,
+.syntax--support.syntax--variable.syntax--dom.syntax--js,
+.syntax--source.syntax--js,
+{
+  color: #CBBEF9; /** light-purple **/
+}
+
+.syntax--storage.syntax--type.syntax--class,
+.syntax--storage.syntax--modifier.syntax--extends,
+.syntax--storage.syntax--modifier,
+.syntax--storage.syntax--type.syntax--function,
+.syntax--support.syntax--function.syntax--construct,
+{
+  color: @green;
+}
+
+.syntax--variable.syntax--other,
+.syntax--punctuation.syntax--definition.syntax--variable,
+{
+  color: @cyan;
+}
+
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--section.syntax--scope.syntax--begin,
+.syntax--punctuation.syntax--section.syntax--scope.syntax--end,
+.syntax--punctuation.syntax--section.syntax--array.syntax--begin,
+.syntax--punctuation.syntax--section.syntax--array.syntax--end,
+.syntax--meta.syntax--brace.syntax--round,
+{
+  color: #E3CF8F; /** Gold **/
+}
+
+.syntax--keyword.syntax--operator.syntax--class,
+.syntax--keyword.syntax--operator.syntax--assignment,
+.syntax--keyword.syntax--operator.syntax--logical,
+{
+  color: #F92672; /** red **/
+}
+
+.syntax--meta.syntax--string-contents.syntax--quoted.syntax--single,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--meta.syntax--string-contents.syntax--quoted.syntax--double,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--js,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--js,
+.syntax--string.syntax--quoted.syntax--single.syntax--js,
+{
+  color: #FFA0B8; /** light red string **/
+}
+
+.syntax--comment.syntax--line.syntax--double-slash,
+.syntax--punctuation.syntax--definition.syntax--comment,
+{
+  color: #777; /** grey comments **/
+}
+
+.syntax--keyword.syntax--operator.syntax--in.syntax--js
+{
+  color: @purple;
+}
+
+.syntax--support.syntax--variable.syntax--dom.syntax--js,
+{
+  color: #FDA5FF; /** light pink **/
+}
