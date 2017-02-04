@@ -20,6 +20,7 @@
 .syntax--storage.syntax--modifier,
 .syntax--storage.syntax--type.syntax--function,
 .syntax--support.syntax--function.syntax--construct,
+.syntax--support.syntax--constant.syntax--property-value,
 {
   color: @green;
 }
@@ -30,12 +31,30 @@
   color: @cyan;
 }
 
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--placeholder,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
+{
+  color: #0099FF; /** blue **/
+}
+
 .syntax--punctuation.syntax--definition.syntax--parameters,
 .syntax--punctuation.syntax--section.syntax--scope.syntax--begin,
 .syntax--punctuation.syntax--section.syntax--scope.syntax--end,
 .syntax--punctuation.syntax--section.syntax--array.syntax--begin,
 .syntax--punctuation.syntax--section.syntax--array.syntax--end,
 .syntax--meta.syntax--brace.syntax--round,
+.syntax--string.syntax--quoted.syntax--single,
+.syntax--constant.syntax--character.syntax--escape,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--entity.syntax--css,
+.syntax--constant.syntax--numeric.syntax--color.syntax--hex-value,
+.syntax--punctuation.syntax--definition.syntax--constant,
+.syntax--constant.syntax--numeric,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--scss,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--scss,
 {
   color: #E3CF8F; /** Gold **/
 }
@@ -43,6 +62,10 @@
 .syntax--keyword.syntax--operator.syntax--class,
 .syntax--keyword.syntax--operator.syntax--assignment,
 .syntax--keyword.syntax--operator.syntax--logical,
+.syntax--keyword.syntax--control.syntax--at-rule.syntax--fontface,
+.syntax--punctuation.syntax--definition.syntax--keyword,
+.syntax--keyword.syntax--control.syntax--at-rule.syntax--import,
+.syntax--keyword.syntax--control.syntax--at-rule.syntax--import,
 {
   color: #F92672; /** red **/
 }
@@ -70,6 +93,7 @@
 }
 
 .syntax--support.syntax--variable.syntax--dom.syntax--js,
+.syntax--support.syntax--type.syntax--property-name,
 {
   color: #FDA5FF; /** light pink **/
 }
