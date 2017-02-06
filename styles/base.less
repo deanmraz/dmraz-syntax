@@ -75,7 +75,7 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @red;
   }
 
   &.syntax--other.syntax--special-method {
@@ -83,23 +83,30 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @purple;
   }
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @red;
+
+  &.syntax--function,
+  &.syntax--modifier,
+  &.syntax--extends,
+  &.syntax--class {
+    color: @green;
+  }
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @purple;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @purple;
   }
 
   &.syntax--other.syntax--color {
@@ -112,10 +119,10 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--variable {
-  color: @red;
+  color: @cyan;
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: @blue;
   }
 
   &.syntax--parameter.syntax--function {
@@ -129,14 +136,14 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--string {
-  color: @green;
+  color: @gold;
 
 
   &.syntax--regexp {
     color: @cyan;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @purple;
     }
   }
 
@@ -152,10 +159,14 @@ atom-text-editor .search-results .marker.current-result .region {
     }
 
     &.syntax--string,
+    &.syntax--array {
+      color: @gold;
+    }
+
     &.syntax--variable,
     &.syntax--parameters,
-    &.syntax--array {
-      color: @syntax-text-color;
+    {
+      color: @cyan;
     }
 
     &.syntax--heading,
@@ -164,7 +175,7 @@ atom-text-editor .search-results .marker.current-result .region {
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @light-purple;
       font-weight: bold;
     }
 
@@ -181,12 +192,14 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--support {
+  &.syntax--use,
+  &.syntax--use-as,
   &.syntax--class {
-    color: @light-orange;
+    color: @light-purple;
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @red;
 
     &.syntax--any-method {
       color: @blue;
@@ -196,22 +209,22 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @light-purple;
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @light-purple;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @light-purple;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @light-purple;
   }
 
   &.syntax--name.syntax--section {
-    color: @blue;
+    color: @light-purple;
   }
 
   &.syntax--name.syntax--tag {
@@ -220,25 +233,30 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @purple;
 
     &.syntax--id {
       color: @blue;
     }
   }
+
+  >.syntax--none {
+    color: @cyan;
+  }
 }
 
 .syntax--meta {
+  &.syntax--function-call,
   &.syntax--class {
-    color: @light-orange;
+    color: @light-purple;
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @purple;
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @green;
   }
 
   &.syntax--selector {
@@ -257,7 +275,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @purple;
     font-weight: bold;
   }
 
@@ -287,7 +305,7 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @purple;
   }
 
   &.syntax--raw.syntax--inline {
@@ -300,6 +318,10 @@ atom-text-editor .search-results .marker.current-result .region {
   &.syntax--heading {
     color: @green;
   }
+}
+
+.syntax--source {
+  // color: @light-purple;
 }
 
 

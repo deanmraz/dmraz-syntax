@@ -1,104 +1,161 @@
 @import "./styles/base.less";
+@import "./styles/colors.less";
+
+// terraform
+.syntax--terraform {
+  .syntax--variable.syntax--parameter {
+    color: @gold;
+  }
+}
+
+// php
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--php,
+{
+  color: @very-light-gray;
+}
+
+// css
+.syntax--css {
+  .syntax--punctuation.syntax--definition.syntax--keyword,
+  {
+    color: @purple;
+  }
+  .syntax--support.syntax--type.syntax--property-name,
+  {
+    color: @red;
+  }
+}
 
 /** CUSTOM **/
-
-.syntax--support.syntax--other.syntax--namespace.syntax--use,
-.syntax--entity.syntax--name.syntax--type.syntax--namespace,
-.syntax--entity.syntax--name.syntax--type.syntax--class,
-.syntax--entity.syntax--other.syntax--inherited-class,
-.syntax--variable.syntax--other.syntax--property,
-.syntax--meta.syntax--function-call.syntax--object,
-.syntax--support.syntax--class,
-.syntax--support.syntax--variable.syntax--dom.syntax--js,
-.syntax--source.syntax--js,
-{
-  color: #CBBEF9; /** light-purple **/
-}
-
-.syntax--storage.syntax--type.syntax--class,
-.syntax--storage.syntax--modifier.syntax--extends,
-.syntax--storage.syntax--modifier,
-.syntax--storage.syntax--type.syntax--function,
-.syntax--support.syntax--function.syntax--construct,
-.syntax--support.syntax--constant.syntax--property-value,
-{
-  color: @green;
-}
-
-.syntax--variable.syntax--other,
-.syntax--punctuation.syntax--definition.syntax--variable,
-{
-  color: @cyan;
-}
-
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--placeholder,
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
-{
-  color: #0099FF; /** blue **/
-}
-
-.syntax--punctuation.syntax--definition.syntax--parameters,
-.syntax--punctuation.syntax--section.syntax--scope.syntax--begin,
-.syntax--punctuation.syntax--section.syntax--scope.syntax--end,
-.syntax--punctuation.syntax--section.syntax--array.syntax--begin,
-.syntax--punctuation.syntax--section.syntax--array.syntax--end,
-.syntax--meta.syntax--brace.syntax--round,
-.syntax--string.syntax--quoted.syntax--single,
-.syntax--constant.syntax--character.syntax--escape,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
-.syntax--punctuation.syntax--definition.syntax--entity.syntax--css,
-.syntax--constant.syntax--numeric.syntax--color.syntax--hex-value,
-.syntax--punctuation.syntax--definition.syntax--constant,
-.syntax--constant.syntax--numeric,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--scss,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--scss,
-.syntax--string.syntax--quoted.syntax--double.syntax--css,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--start.syntax--css,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--css,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--css,
-.syntax--constant.syntax--other.syntax--rgb-value.syntax--css,
-{
-  color: #E3CF8F; /** Gold **/
-}
-
-.syntax--keyword.syntax--operator.syntax--class,
-.syntax--keyword.syntax--operator.syntax--assignment,
-.syntax--keyword.syntax--operator.syntax--logical,
-.syntax--keyword.syntax--control.syntax--at-rule.syntax--fontface,
-.syntax--punctuation.syntax--definition.syntax--keyword,
-.syntax--keyword.syntax--control.syntax--at-rule.syntax--import,
-.syntax--keyword.syntax--control.syntax--at-rule.syntax--import,
-{
-  color: #F92672; /** red **/
-}
-
-.syntax--meta.syntax--string-contents.syntax--quoted.syntax--single,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
-.syntax--meta.syntax--string-contents.syntax--quoted.syntax--double,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--js,
-.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--js,
-.syntax--string.syntax--quoted.syntax--single.syntax--js,
-{
-  color: #FFA0B8; /** light red string **/
-}
-
-.syntax--comment.syntax--line.syntax--double-slash,
-.syntax--punctuation.syntax--definition.syntax--comment,
-{
-  color: #777; /** grey comments **/
-}
-
-.syntax--keyword.syntax--operator.syntax--in.syntax--js
-{
-  color: @purple;
-}
-
-.syntax--support.syntax--variable.syntax--dom.syntax--js,
-.syntax--support.syntax--type.syntax--property-name,
-{
-  color: #FDA5FF; /** light pink **/
-}
+//
+// .syntax--support.syntax--other.syntax--namespace.syntax--use,
+// .syntax--entity.syntax--name.syntax--type.syntax--namespace,
+// .syntax--entity.syntax--name.syntax--type.syntax--class,
+// .syntax--entity.syntax--other.syntax--inherited-class,
+// .syntax--variable.syntax--other.syntax--property,
+// .syntax--meta.syntax--function-call.syntax--object,
+// .syntax--support.syntax--class,
+// .syntax--support.syntax--variable.syntax--dom.syntax--js,
+// .syntax--source.syntax--js,
+// .syntax--support.syntax--other.syntax--namespace.syntax--use-as,
+// .syntax--variable.syntax--other.syntax--module.syntax--js,
+// .syntax--variable.syntax--other.syntax--object.syntax--js,
+// .syntax--support.syntax--function.syntax--magic.syntax--php,
+// .syntax--support.syntax--function.syntax--js,
+// .syntax--entity.syntax--name.syntax--type.syntax--instance.syntax--js,
+// .syntax--meta.syntax--brace.syntax--curly.syntax--js,
+// .syntax--meta.syntax--brace.syntax--square.syntax--js,
+// .syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin.syntax--bracket.syntax--round.syntax--js,
+// .syntax--punctuation.syntax--definition.syntax--parameters.syntax--end.syntax--bracket.syntax--round.syntax--js,
+// .syntax--punctuation.syntax--definition.syntax--arguments.syntax--begin.syntax--bracket.syntax--round.syntax--js,
+// .syntax--punctuation.syntax--definition.syntax--arguments.syntax--end.syntax--bracket.syntax--round.syntax--js,
+// .syntax--meta.syntax--delimiter.syntax--method.syntax--period.syntax--js,
+// .syntax--meta.syntax--method-call.syntax--js > .syntax--meta.syntax--arguments.syntax--js,
+// .syntax--support.syntax--other.syntax--namespace.syntax--php,
+// .syntax--punctuation.syntax--section.syntax--array.syntax--begin,
+// .syntax--punctuation.syntax--section.syntax--array.syntax--end,
+// .syntax--punctuation.syntax--definition.syntax--parameters,
+// .syntax--punctuation.syntax--section.syntax--scope.syntax--begin,
+// .syntax--punctuation.syntax--section.syntax--scope.syntax--end,
+// {
+//   color: #CBBEF9; /** light-purple **/
+// }
+//
+// .syntax--storage.syntax--type.syntax--class,
+// .syntax--storage.syntax--modifier.syntax--extends,
+// .syntax--storage.syntax--modifier,
+// .syntax--storage.syntax--type.syntax--function,
+// .syntax--support.syntax--function.syntax--construct,
+// .syntax--support.syntax--constant.syntax--property-value,
+// .syntax--constant.syntax--language,
+// .syntax--keyword.syntax--control,
+// .syntax--keyword.syntax--operator.syntax--new.syntax--js,
+// .syntax--storage.syntax--type.syntax--var.syntax--js,
+// {
+//   color: @green;
+// }
+//
+// .syntax--variable.syntax--other,
+// .syntax--punctuation.syntax--definition.syntax--variable,
+// .syntax--variable.syntax--parameter.syntax--function.syntax--js,
+// .syntax--arguments,
+// {
+//   color: @cyan;
+// }
+//
+// .syntax--entity.syntax--other.syntax--attribute-name.syntax--placeholder,
+// .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
+// {
+//   color: #0099FF; /** blue **/
+// }
+//
+// .syntax--meta.syntax--brace.syntax--round,
+// .syntax--string.syntax--quoted.syntax--single,
+// .syntax--constant.syntax--character.syntax--escape,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+// .syntax--punctuation.syntax--definition.syntax--entity.syntax--css,
+// .syntax--constant.syntax--numeric.syntax--color.syntax--hex-value,
+// .syntax--punctuation.syntax--definition.syntax--constant,
+// .syntax--constant.syntax--numeric,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--scss,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--scss,
+// .syntax--string.syntax--quoted.syntax--double.syntax--css,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--start.syntax--css,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--css,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--css,
+// .syntax--constant.syntax--other.syntax--rgb-value.syntax--css,
+// .syntax--string.syntax--unquoted.syntax--yaml,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--coffee,
+// .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--coffee,
+// .syntax--string.syntax--quoted.syntax--double.syntax--json,
+// .syntax--string.syntax--quoted.syntax--double.syntax--js,
+// .syntax--meta.syntax--string-contents.syntax--quoted.syntax--double,
+// .syntax--meta.syntax--string-contents.syntax--quoted.syntax--single,
+// {
+//   color: #E3CF8F; /** Gold **/
+// }
+//
+// .syntax--keyword.syntax--operator.syntax--class,
+// .syntax--keyword.syntax--operator.syntax--assignment,
+// .syntax--keyword.syntax--operator.syntax--logical,
+// .syntax--keyword.syntax--control.syntax--at-rule.syntax--fontface,
+// .syntax--punctuation.syntax--definition.syntax--keyword,
+// .syntax--keyword.syntax--control.syntax--at-rule.syntax--import,
+// .syntax--keyword.syntax--control.syntax--at-rule.syntax--import,
+// .syntax--meta.syntax--function-call,
+// .syntax--support.syntax--function.syntax--file.syntax--php,
+// {
+//   color: #F92672; /** red **/
+// }
+//
+// // .syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+// // .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+// // .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--js,
+// // .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--js,
+// // .syntax--string.syntax--quoted.syntax--single.syntax--js,
+// .syntax--string.syntax--quoted.syntax--double.syntax--yaml,
+// {
+//   color: #FFA0B8; /** light red string **/
+// }
+//
+// .syntax--comment.syntax--line.syntax--double-slash,
+// .syntax--punctuation.syntax--definition.syntax--comment,
+// {
+//   color: #777; /** grey comments **/
+// }
+//
+// .syntax--keyword.syntax--operator.syntax--in.syntax--js
+// {
+//   color: @purple;
+// }
+//
+// .syntax--support.syntax--variable.syntax--dom.syntax--js,
+// .syntax--support.syntax--type.syntax--property-name,
+// {
+//   color: #FDA5FF; /** light pink **/
+// }
