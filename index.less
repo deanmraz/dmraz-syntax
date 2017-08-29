@@ -8,7 +8,45 @@
   }
 }
 
+// js
+.syntax--js {
+  .syntax--keyword.syntax--control {
+    color: @green;
+  }
+
+  .syntax--variable,
+  .syntax--function,
+  .syntax--meta,
+  {
+    color: @light-purple;
+  }
+  .syntax--variable.syntax--language,
+  .syntax--storage.syntax--type.syntax--function,
+  {
+    color: @red;
+  }
+  // .syntax--meta.syntax--arguments
+  .syntax--variable.syntax--parameter.syntax--function,
+  {
+    color: @cyan;
+  }
+  .syntax--punctuation,
+  .syntax--meta.syntax--brace,
+  .syntax--punctuation.syntax--definition.syntax--parameters.syntax--bracket.syntax--round.syntax--js,
+  {
+    color: @very-light-gray;
+  }
+}
+
 // php
+.syntax--php {
+  .syntax--namespace {
+    color: @light-purple;
+  }
+  .syntax--keyword.syntax--namespace {
+    color: @green;
+  }
+}
 .syntax--punctuation.syntax--definition.syntax--parameters.syntax--php,
 {
   color: @very-light-gray;
@@ -23,6 +61,16 @@
   .syntax--support.syntax--type.syntax--property-name,
   {
     color: @red;
+  }
+}
+
+// markdown
+.syntax--gfm {
+  .syntax--variable {
+    color: @red;
+  }
+  .syntax--link {
+    color: @gold;
   }
 }
 
