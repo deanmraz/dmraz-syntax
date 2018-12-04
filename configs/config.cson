@@ -1,0 +1,47 @@
+"*":
+  "atom-package-deps":
+    ignored: [
+      "linter-ui-default"
+      "php-integrator-navigation"
+      "php-integrator-navigation"
+    ]
+  autosave:
+    enabled: true
+  core:
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "tabs"
+      "php-integrator-navigation"
+      "language-hyperlink"
+      "github"
+      "ide-css"
+      "tree-view-search-bar"
+      "tree-view-filter"
+      "ember-shortcuts"
+    ]
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dmraz-syntax"
+    ]
+  editor:
+    fontSize: 21
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "git-blame":
+    columnWidth: 493
+  "linter-eslint": {}
+  "linter-ui-default":
+    panelHeight: 99
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "tree-view-filter":
+    caseInsensitive: true
+    fuzzySearch: true
+    liveUpdate: true
+  welcome:
+    showOnStartup: false

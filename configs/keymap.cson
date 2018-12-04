@@ -1,0 +1,69 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+
+'.platform-darwin, .platform-win32, .platform-linux':
+  'cmd-l': 'go-to-line:toggle'
+
+ 'atom-text-editor':
+   'cmd-[': 'last-cursor-position:previous'
+   'cmd-]': 'last-cursor-position:next'
+   'cmd-e': 'recent-files-fuzzy-finder:toggle-finder'
+   'cmd-1': 'tree-view:toggle'
+   'ctrl-cmd-s': 'pane:split-left-and-copy-active-item'
+   'alt-ctrl-cmd-s': 'pane:split-down-and-copy-active-item'
+  #  'cmd-l': 'nvatom:toggle'
+   'cmd-shift-l': 'tabs-to-spaces:untabify-all'
+#   'enter': 'editor:newline'
+#
+ 'atom-workspace':
+   'cmd-[': 'last-cursor-position:previous'
+   'cmd-]': 'last-cursor-position:next'
+   'cmd-e': 'recent-files-fuzzy-finder:toggle-finder'
+   'cmd-1': 'tree-view:toggle'
+   'ctrl-cmd-s': 'pane:split-left-and-copy-active-item'
+   'alt-ctrl-cmd-s': 'pane:split-down-and-copy-active-item'
+  #  'cmd-l': 'nvatom:toggle'
+   'cmd-shift-l': 'tabs-to-spaces:untabify-all'
+   'alt-m': 'merge-conflicts:detect'
+  #  'ctrl-alt-e': 'ember-shortcuts:toggle-between-javascript-and-hbs'
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+
+  '.platform-darwin':
+    'cmd-[': 'last-cursor-position:previous'
+    'cmd-]': 'last-cursor-position:next'
+    'cmd-e': 'recent-files-fuzzy-finder:toggle-finder'
+    'cmd-1': 'tree-view:toggle'
+    'ctrl-cmd-s': 'pane:split-left-and-copy-active-item'
+    'alt-ctrl-cmd-s': 'pane:split-down-and-copy-active-item'
+    # 'cmd-l': 'nvatom:toggle'
+    'cmd-shift-l': 'tabs-to-spaces:untabify-all'
+    # 'ctrl-alt-e': 'ember-shortcuts:toggle-between-javascript-and-hbs'
+
+  '.tree-view':
+    'cmd-[': 'last-cursor-position:previous'
+    'cmd-]': 'last-cursor-position:next'
+    'cmd-e': 'recent-files-fuzzy-finder:toggle-finder'
+    'cmd-1': 'tree-view:toggle'
+    # 'cmd-l': 'nvatom:toggle'
+    'cmd-shift-l': 'tabs-to-spaces:untabify-all'
+
+  'atom-text-editor[data-grammar="text html htmlbars"]:not([mini])':
+    'tab': 'emmet:expand-abbreviation-with-tab'
+
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
+# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
